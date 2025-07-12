@@ -95,13 +95,14 @@ const char = [
 let generator = document.getElementById("generator");
 let firstSuggestion = document.getElementById("suggestion-one");
 let secondSuggestion = document.getElementById("suggestion-two");
+let confirmationSection = document.getElementById("confirmation");
 
 function copyPassword(password) {
   navigator.clipboard.writeText(password.textContent).then(() => {
     let confirmation = document.createElement("span");
     confirmation.textContent = "copied";
     confirmation.id = "confirmation-text";
-    password.parentNode.appendChild(confirmation);
+    confirmationSection.parentNode.appendChild(confirmation);
   });
 }
 
