@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+#green-header-text {
+  color: #4adf86;
+}
+
+.password-section {
+  border-top: 1px solid;
+  padding-top: 35px;
+}
+
+button {
+  padding: 9px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #10b981;
+  color: white;
+}
+
+#suggestion-one,
+#suggestion-two {
+  height: 39px;
+  width: 211px;
+  border-radius: 6px;
+  border: none;
+}
