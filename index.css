@@ -3,21 +3,30 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: white;
 }
 
 .container {
   display: inline-flex;
   flex-direction: column;
   gap: 35px;
+  background-color: #1f2937;
+  padding: 115px 52px;
 }
 
 #green-header-text {
   color: #4adf86;
 }
 
+p {
+  margin-bottom: 51px;
+}
+
 .password-section {
-  border-top: 1px solid;
+  border-top: 1px solid #2f3e53;
   padding-top: 35px;
+  display: flex;
+  gap: 24px;
 }
 
 button {
@@ -34,4 +43,6 @@ button {
   width: 211px;
   border-radius: 6px;
   border: none;
+  color: #55f991;
+  background-color: #273549;
 }
