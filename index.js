@@ -100,9 +100,16 @@ let confirmationSection = document.getElementById("confirmation");
 function copyPassword(password) {
   navigator.clipboard.writeText(password.textContent).then(() => {
     let confirmation = document.createElement("span");
-    confirmation.textContent = "copied";
-    confirmation.id = "confirmation-text";
-    confirmationSection.parentNode.appendChild(confirmation);
+    let existingConfirmation = document.getElementById("confirmation-text");
+    if (!existingConfirmation) {
+      confirmation.textContent = "copied";
+      confirmation.id = "confirmation-text";
+      confirmationSection.parentNode.appendChild(confirmation);
+    }
+
+    setTimeout(() => {
+      confirmation.remove();
+    }, 2000);
   });
 }
 
