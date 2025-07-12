@@ -46,3 +46,8 @@ button {
   color: #55f991;
   background-color: #273549;
 }
+
+#confirmation-text {
+  color: green;
+  margin-left: 10px;
+}
